@@ -98,12 +98,9 @@ $(window).on('load', function() {
     $('#header').append('<h1>' + (getSetting('_mapTitle') || '') + '</h1>');
     $('#header').append('<h2>' + (getSetting('_mapSubtitle') || '') + '</h2>');
 
-    // Add logo
     if (getSetting('_mapLogo')) {
-      $('#logo').append('<img src="' + getSetting('_mapLogo') + '" />');
       $('#top').css('height', '60px');
     } else {
-      $('#logo').css('display', 'none');
       $('#header').css('padding-top', '25px');
     }
 
